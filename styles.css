@@ -1,0 +1,11 @@
+.container{
+    margin: auto; 
+}
+
+.card{
+ background-color: rgb(184, 181, 181);
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+}
