@@ -96,18 +96,19 @@ const filEditData = (foodId) => {
         else {console.log("POST request unsuccessful")}
         return res
     })
-     .then(res => {
-        return res.json();
-    })
+   //  .then(res => {
+  //      return res.json();
+  //  })
+  alert ('Item has been added')
+
     .then(data => {
         foods = data;
         renderFoods(data);
     }); 
 }
-
-fetch(`${BASE_URL}/api/Food/2`, {
+const deleteTodo = (id) => {
+fetch(`${BASE_URL}/api/Food/${id}`, {
     method: 'DELETE', 
-    headers: {'content-type': 'application/json'},
 
 })
   .then(res =>{
@@ -117,4 +118,6 @@ fetch(`${BASE_URL}/api/Food/2`, {
       else {console.log("DELETE request unsuccessful")}
       return res
   })
+
    .then(res => console.log(res))
+}
