@@ -1,6 +1,12 @@
 body{
   background-image: url(" https://www.infokop.net/images/stories/ugostitelji/beli-meda/1.jpg");
 }
+
+#services-row{
+  margin:0;
+  display:flex;
+  justify-content: center;
+}
 .title{
 text-align: center;
 margin-top: 30px;
@@ -32,8 +38,9 @@ font-size: xx-large;
 }
 .navbar{
   background-color: rgb(243, 211, 186);
+  width: auto;
 }
 .sticky-footer{
-  width: auto;
+  max-width: 100%;
   position: fixed;
 }
