@@ -1,46 +1,57 @@
-body{
+body {
   background-image: url(" https://www.infokop.net/images/stories/ugostitelji/beli-meda/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#services-row{
-  margin:0;
-  display:flex;
+#services-row {
+  margin: 0;
+  display: flex;
   justify-content: center;
 }
-.title{
-text-align: center;
-margin-top: 30px;
-margin-bottom: 30px;
-font-size: xx-large;
+.title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: xx-large;
 }
 
-.card img{
+.card img {
   margin-top: 10px;
 }
 
-.container{
-    margin: auto; 
+.container {
+  margin: auto;
 }
 
-.card{
- background-color: rgb(180, 136, 86);
+.card {
+  background-color: rgb(180, 136, 86);
   font-weight: bold;
   font-style: italic;
   text-align: center;
   margin-top: 10px;
 }
 
-.navbar-brand{
+.navbar-brand {
   color: rgb(0, 0, 0);
 }
-.nav-link{
+.nav-link {
   color: black;
 }
-.navbar{
+.navbar {
   background-color: rgb(243, 211, 186);
   width: auto;
 }
-.sticky-footer{
+.sticky-footer {
   max-width: 100%;
   position: fixed;
+}
+.form,
+.deleteForm {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
