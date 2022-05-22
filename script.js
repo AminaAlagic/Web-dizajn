@@ -22,7 +22,7 @@ const renderFoods = (foods) => {
             <img src="${food.imageUrl}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${food.name}</h5>
-                <p class="card-text">${food.price}KM</p>
+                <p class="card-text">${food.price}  KM</p>
                 <button type="button" onclick="fillEditData(${food.id})" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Edit</button>
                 <button type="button"class="btn btn-primary">Delete</button>
             </div>
@@ -88,23 +88,18 @@ const filEditData = (foodId) => {
             "imageUrl": "string"
         })
 
-})
-    .then(res =>{
-        if(res.ok){
-            console.log("POST request successful")
-        }
-        else {console.log("POST request unsuccessful")}
-        return res
-    })
-   //  .then(res => {
-  //      return res.json();
-  //  })
-  alert ('Item has been added')
-
-    .then(data => {
-        foods = data;
-        renderFoods(data);
-    }); 
+ })
+   
+   .then((response) => {
+       console.log(responce);
+       return response.json();
+   })
+   .then((data)=>{
+       console.log(data);
+   })
+   .catc((error)=>{
+       console.log(error)
+   })
 }
 const deleteTodo = (id) => {
 fetch(`${BASE_URL}/api/Food/${id}`, {
